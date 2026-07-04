@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Css Task 6</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* 1. Fixed Navbar */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* الصفحة حتى لا يغطيها الـ navbar */
+
+body{
+    padding-top:80px;
+}
+
+/* 2. Card + Ribbon */
+
+.card{
+    position:relative;
+    width:300px;
+    padding:25px;
+    margin:40px auto;
+    border:2px solid #ddd;
+    border-radius:10px;
+    background:#f5f5f5;
+}
+
+.ribbon{
+    position:absolute;
+    top:10px;
+    right:-10px;
+    background:red;
+    color:white;
+    padding:5px 15px;
+    border-radius:5px;
+}
+
+/* 3. Sticky */
+
+.sticky{
+    position:sticky;
+    top:0;
+    background:orange;
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* 4. Overflow */
+
+.box{
+    width:300px;
+    height:150px;
+    margin:40px auto;
+    border:2px solid black;
+    padding:10px;
+    overflow:auto;
+}
+
+.long{
+    height:1200px;
+    padding:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- Fixed Navbar -->
+
+<nav>
+    My Fixed Navbar
+</nav>
+
+<!-- Card -->
+
+<div class="card">
+
+    <span class="ribbon">NEW</span>
+
+    <h2>Product Card</h2>
+
+    <p>
+        This card contains an absolute ribbon.
+    </p>
+
+</div>
+
+<!-- Sticky -->
+
+<div class="sticky">
+    أنا Sticky Section
+</div>
+
+<!-- محتوى طويل حتى يظهر تأثير Sticky -->
+
+<div class="long">
+
+    <p>Scroll Down 👇</p>
+
+    <br><br>
+
+ 
+
+    <br><br>
+
+    <!-- Overflow -->
+
+    <div class="box">
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        <br><br>
+        Lorem ipsum dolor sit amet.
+        <br><br>
+        Lorem ipsum dolor sit amet.
+        <br><br>
+        Lorem ipsum dolor sit amet.
+        <br><br>
+        Lorem ipsum dolor sit amet.
+        <br><br>
+        Lorem ipsum dolor sit amet.
+        <br><br>
+        Lorem ipsum dolor sit amet.
+        <br><br>
+        Lorem ipsum dolor sit amet.
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Exercises</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#333;
+    padding:20px;
+}
+
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+
+.links{
+    display:flex;
+    gap:20px;
+}
+
+.links a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Titles */
+
+h1{
+    margin:30px 20px 15px;
+}
+
+/* Cards */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    flex:1 1 250px;
+    height:150px;
+    background:skyblue;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:30px;
+    border-radius:10px;
+}
+
+/* Profile Card */
+
+.profile{
+    width:300px;
+    height:350px;
+    margin:20px auto;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    border:2px solid gray;
+    border-radius:10px;
+}
+
+.profile img{
+    width:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+.profile p{
+    margin-top:10px;
+}
+
+/* Sidebar Layout */
+
+.container{
+    display:flex;
+    height:400px;
+    margin-top:20px;
+}
+
+.sidebar{
+    width:250px;
+    background:#444;
+    color:white;
+    padding:20px;
+}
+
+.content{
+    flex:1;
+    background:#eee;
+    padding:20px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Exercise 1 -->
+
+<nav class="navbar">
+
+    <div class="logo">LOGO</div>
+
+    <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+</nav>
+
+
+<!-- Exercise 2 -->
+
+<h1>Flex Wrap Cards</h1>
+
+<div class="cards">
+
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <div class="card">6</div>
+
+</div>
+
+
+<!-- Exercise 3 -->
+
+<h1>Profile Card</h1>
+
+<div class="profile">
+
+    <img src="https://via.placeholder.com/120" alt="Profile">
+
+    <h2>Haneen</h2>
+
+    <p>Frontend Developer</p>
+
+</div>
+
+
+<!-- Exercise 4 -->
+
+<h1>Sidebar Layout</h1>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+    </div>
+
+    <div class="content">
+        <h2>Main Content</h2>
+        <p>
+            This is the main content area.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>

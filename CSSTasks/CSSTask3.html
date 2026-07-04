@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task 3</title>
+</head>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+        }
+
+        div {
+            width: 250px;
+            height: 100px;
+            margin: 20px auto;
+            color: white;
+            line-height: 100px;
+            font-size: 20px;
+        }
+
+        /* ألوان */
+        .hex {
+            background: #3498db;
+        }
+
+        .rgb {
+            background: rgb(255, 99, 71);
+        }
+
+        .rgba {
+            background: rgba(0, 128, 0, 0.6);
+        }
+
+        .hsl {
+            background: hsl(280, 70%, 50%);
+        }
+
+        /* Gradient */
+        .linear1 {
+            background: linear-gradient(to right, red, yellow);
+        }
+
+        .linear2 {
+            background: linear-gradient(95deg, blue, purple);
+        }
+
+        .radial {
+            background: radial-gradient(circle, orange, red);
+        }
+
+        /* Background Cover */
+        section {
+            height: 500px;
+            background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            font-size: 30px;
+            line-height: 500px;
+        }
+    </style>
+<body>
+    
+    <h1>CSS Colors & Background</h1>
+
+    <!-- 4 صناديق بألوان مختلفة -->
+    <div class="hex">HEX</div>
+    <div class="rgb">RGB</div>
+    <div class="rgba">RGBA</div>
+    <div class="hsl">HSL</div>
+
+    <!-- Gradient -->
+    <div class="linear1">Linear Horizontal</div>
+    <div class="linear2">Linear Angle</div>
+    <div class="radial">Radial Gradient</div>
+
+    <!-- Background Cover -->
+    <section class="hero">
+        <h2>Background Cover</h2>
+    </section>
+
+
+</body>
+</html>

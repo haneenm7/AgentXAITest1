@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Task 5</title>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .card{
+        width: 300px;
+        margin: 20px auto;
+        background: white;
+        border: 2px solid gray;
+        box-shadow: 3px 3px 8px gray;
+        transition: 0.3s;
+    }
+   .card:hover{
+        box-shadow: 8px 8px 15px black;
+    }
+
+    .card1{
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .card2{
+        padding: 25px;
+        border-radius: 20px;
+    }
+
+    .card3{
+        padding: 35px;
+        border-radius: 30px;
+    }
+
+ 
+    /* زر Neumorphism */
+
+    .btn{
+        margin-top: 30px;
+        padding: 15px 35px;
+        font-size: 18px;
+        border: none;
+        border-radius: 15px;
+        background: #e0e0e0;
+        box-shadow: 5px 5px 10px #a4a3a3,
+                   -5px -5px 10px white;
+        cursor: pointer;
+    }
+
+</style>
+
+</head>
+<body>
+
+<h1>Cards Example</h1>
+
+<div class="card card1">
+    <h3>Card 1</h3>
+    <p>This is the first card.</p>
+</div>
+
+<div class="card card2">
+    <h3>Card 2</h3>
+    <p>This is the second card.</p>
+</div>
+
+<div class="card card3">
+    <h3>Card 3</h3>
+    <p>This is the third card.</p>
+</div>
+
+<button class="btn">Click Me</button>
+
+</body>
+</html>
