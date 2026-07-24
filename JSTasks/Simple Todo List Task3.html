@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Todo List Task3</title>
+    <style>
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text" id="taskInput" placeholder="أدخل مهمة جديدة">
+    <button id="addTaskButton">إضافة مهمة</button>
+    <ul id="taskList">
+
+    </ul>
+
+
+
+    <script>
+        let taskInput = document.getElementById("taskInput");
+        let addTaskButton = document.getElementById("addTaskButton");
+        let taskList = document.getElementById("taskList");
+
+        addTaskButton.addEventListener("click", function () {
+            let newTask = taskInput.value.trim();
+            if (newTask !== "") {
+                let listItem = document.createElement("li");
+                listItem.textContent = newTask;
+                taskList.appendChild(listItem);
+
+                let deleteButton = document.createElement("button");
+                deleteButton.textContent = "delete";
+                
+                listItem.appendChild(deleteButton);
+                deleteButton.addEventListener("click", function () {
+                    taskList.removeChild(listItem);
+                });
+                listItem.addEventListener("click", function () {
+                    listItem.classList.toggle("done");
+                });
+
+                taskInput.value = "";
+            }
+            else {
+                alert("please enter a task");
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
